@@ -1,12 +1,8 @@
-user_name = input()
+qvt = int(input())
 
-
-if (
-    user_name.startswith('@')
-    and 5 <= len(user_name) <= 15
-    and user_name[1:].isalnum()
-    and user_name == user_name.lower()
-):
-    print('Correct')
-else:
-    print('Incorrect')
+for i in range(1, qvt+1):
+    comment = input()
+    if comment.isspace() or comment == '':
+        print(f"{i}: COMMENT SHOULD BE DELETED")
+    else:
+        print(f"{i}: {comment}")
